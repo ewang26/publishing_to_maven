@@ -20,7 +20,7 @@ Add the following plugin to your Maven pom.xml:
 
 ```
 
-You will also need to create a 'settings.xml' file under your home directory '~\.m2':
+You will also need to create a 'settings.xml' file under your home directory '~\\.m2':
 ```
 <settings xmlns="http://maven.apache.org/settings/1.0.0">
     <servers>
@@ -65,6 +65,8 @@ mvn clean deploy -P release
 ```
 
 ## 3. Performing a Release Development with the Maven Release Plugin (optional)
+The Maven Release Plugin is primarily used when integrating the SCM with Maven so the Maven deployment process can be part of the automatic build process.
+
 You must edit your 'pom.xml' file to include the following plugin since it is necessary when pushing to the Sonatype repository:
 ```
 <plugin>
@@ -80,7 +82,7 @@ You must edit your 'pom.xml' file to include the following plugin since it is ne
 </plugin>
 ```
 
-Finally, with all these steps completed and the Sourcecode Management (SCM) connection correctlty configured, you can perform a release deployment ot OSSRH using the following command:
+Finally, with all these steps completed and the Sourcecode Management (SCM) connection correctlty configured, you can perform a release deployment at OSSRH using the following command:
 ```
 mvn release:clean release:prepare
 ```
