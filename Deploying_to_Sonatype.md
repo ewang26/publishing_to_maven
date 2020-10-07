@@ -64,7 +64,7 @@ After updating the version, you can perform the deployment using the 'release' p
 mvn clean deploy -P release
 ```
 
-## 3. Performing a Release Development with the Maven Release Plugin
+## 3. Performing a Release Development with the Maven Release Plugin (optional)
 You must edit your 'pom.xml' file to include the following plugin since it is necessary when pushing to the Sonatype repository:
 ```
 <plugin>
